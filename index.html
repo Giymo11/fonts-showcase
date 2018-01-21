@@ -21,46 +21,63 @@
     <link rel="stylesheet" type="text/css" href="fonts/hasklig/hasklig.css">
     <link rel="stylesheet" type="text/css" href="fonts/fixedsys-excelsior/fixedsys-excelsior.css">
     <link rel="stylesheet" type="text/css" href="fonts/dejavu-sans-code/dejavu-sans-code.css">
+    
+    <link rel="stylesheet" type="text/css" href="darcula.css">
 
     <style>
+      html {
+        --fonts-showcase-fg: var(--darcula-fg);
+        --fonts-showcase-bg: var(--darcula-bg);
+        --fonts-showcase-field: var(--darcula-field);
+        --fonts-showcase-annotation: var(--darcula-annotation);
+        --fonts-showcase-keyword: var(--darcula-keyoword);
+        --fonts-showcase-method: var(--darcula-method);
+        --fonts-showcase-operator: #f92672; /* from prism.js "Okaidia", a bit like sublime */
+        --fonts-showcase-string: var(--darcula-string);
+        --fonts-showcase-parameter: var(--darcula-parameter);
+        --fonts-showcase-constant: var(--darcula-constant);
+        --fonts-showcase-number: var(--darcula-number);
+      }
+      
+      body {
+        background: var(--darcula-bg);
+      }
+      
       fonts-showcase-one {
         margin: 32px 0;
+        font-size: 16px;
       }
 
       .iosevka {
         --fonts-showcase-family: 'Iosevka';
-        font-size: 16px;
       }
       .fira-code {
         --fonts-showcase-family: 'Fira Code';
-        font-size: 16px;
       }
       .monoid {
         --fonts-showcase-family: 'Monoid';
-        font-size: 16px;
       }
       .hasklig {
         --fonts-showcase-family: 'Hasklig';
-        font-size: 16px;
       }
       .fixedsys-excelsior {
         --fonts-showcase-family: 'Fixedsys Excelsior';
-        font-size: 16px;
       }
       .dejavu-sans-code {
         --fonts-showcase-family: 'DejaVu Sans Code';
-        font-size: 16px;
       }
+    </style>
+    
+    <style>
+      
     </style>
   </head>
   <body>
-    <fonts-showcase-app></fonts-showcase-app>
     <fonts-showcase-one class="iosevka">Iosevka Custom</fonts-showcase-one>
     <fonts-showcase-one class="fira-code">Fira Code</fonts-showcase-one>
     <fonts-showcase-one class="monoid">Monoid with alternative 'l'</fonts-showcase-one>
     <fonts-showcase-one class="hasklig">Hasklig</fonts-showcase-one>
     <fonts-showcase-one class="fixedsys-excelsior">Fixedsys Excelsior</fonts-showcase-one>
     <fonts-showcase-one class="dejavu-sans-code">DejaVu Sans Code</fonts-showcase-one>
-    
   </body>
 </html>

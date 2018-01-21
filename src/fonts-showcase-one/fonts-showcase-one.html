@@ -15,8 +15,10 @@
     
     <template is="dom-repeat" items="{{fontweights}}">
       <div class="a-row" style="font-weight: [[item.weight]]">
-        <div>[[item.name]]</div>
-        <pre>@real ^fox.quick(h){ *is_brown && it_jumps_over(doges.lazy) } $0123456789#</pre>
+        <div class="weight-name">[[item.name]]</div>
+        <div>
+          <span class="annotation">@real</span> <span class="operator">^</span><span class="field">fox</span>.<span class="method">quick</span>(<span class="parameter">h</span>){ <span class="operator">*</span>is_brown <span class="operator">&&</span> it_jumps_over(<span class="constant">doges.lazy</span>) } <span class="string">"$"</span> <span class="number">0123456789</span>#
+        </div>
       </div>
     </template>
 

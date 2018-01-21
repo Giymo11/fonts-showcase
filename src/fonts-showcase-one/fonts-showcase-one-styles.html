@@ -1,14 +1,57 @@
 <dom-module id="fonts-showcase-one-styles">
   <template>
     <style>
-    :host {
+      :host {
         display: block;
         box-sizing: border-box;
-    }
-    pre {
-      margin: 0;
-      font-family: var(--fonts-showcase-family, monospace);
-    }
+        font-family: var(--fonts-showcase-family, monospace);
+        background: var(--fonts-showcase-bg, #FFF);
+        color: var(--fonts-showcase-fg, #000);
+      }
+      .a-row {
+        display: grid;
+        grid-template-columns: 8em 1fr;
+        grid-gap: 1.5em;
+      }
+      .a-row pre {
+        margin: 0;
+        font-family: var(--fonts-showcase-family, monospace);
+      }
+      .a-row .weight-name{
+        text-align: right;
+      }
+      h2 {
+        margin-left: 9.4rem;
+        margin-bottom: 0px;
+        margin-top: 1.5em;
+      }
+      .field {
+        color: var(--fonts-showcase-field, #000);
+      }
+      .annotation {
+        color: var(--fonts-showcase-annotation, #000);
+      }
+      .keyword {
+        color: var(--fonts-showcase-keyword, #000);
+      }
+      .method {
+        color: var(--fonts-showcase-method, #000);
+      }
+      .operator {
+        color: var(--fonts-showcase-operator, #000);
+      }
+      .string {
+        color: var(--fonts-showcase-string, #000);
+      }
+      .parameter {
+        color: var(--fonts-showcase-parameter, #000);
+      }
+      .constant {
+        color: var(--fonts-showcase-constant, #000);
+      }
+      .number {
+        color: var(--fonts-showcase-number, #000);
+      }
     </style>
   </template>
 </dom-module>

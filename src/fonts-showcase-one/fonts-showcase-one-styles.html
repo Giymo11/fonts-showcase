@@ -4,11 +4,26 @@
     :host {
         display: block;
         box-sizing: border-box;
+        font-family: var(--fonts-showcase-family, monospace);
     }
-    pre {
+    .a-row {
+      display: grid;
+      grid-template-columns: 128px 1fr;
+      grid-gap: 24px;
+    }
+    .a-row pre {
       margin: 0;
       font-family: var(--fonts-showcase-family, monospace);
     }
+    .a-row div {
+      text-align: right;
+    }
+      h2 {
+        margin-left: 150px;
+        margin-bottom: 0px;
+        margin-top: 24px;
+      }
+    
     </style>
   </template>
 </dom-module>

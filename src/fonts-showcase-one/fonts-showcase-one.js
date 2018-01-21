@@ -10,17 +10,19 @@ class FontsShowcaseOne extends Polymer.Element {
           },
           fontweights: {
             type: Array,
-            value: [
-                {name: 'Thin', weight: 100},
-                {name: 'Regular', weight: 400},
-              ]
+            value() {
+              return FontsShowcaseOne.createFontweights();
+            }
           }
     };
   }
 
-  createFontweights() {
+  static createFontweights() {
     const weightNames = ['Thin', 'ExtraLight', 'Light', 'Regular', 'Medium', 'SemiBold', 'Bold', 'Black', 'Heavy'];
-    weightNames.map((value, index) => { name: value, weight: (index + 1) * 100 })
+    
+    return weightNames.map(
+      (value, index) =>  ({name: value, weight: (index + 1) * 100 } )
+    )
   }
 
   /**

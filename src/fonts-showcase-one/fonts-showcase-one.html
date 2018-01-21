@@ -8,24 +8,17 @@
   <template>
 
     <style include="fonts-showcase-one-styles"></style>
-    <slot></slot>
-    <!--
-    <div class="">
-      <div style="font-weight: 100"><pre>@real ^fox.quick(h){ *is_brown && it_jumps_over(doges.lazy) } $0123456789#</pre></div>
-      <div style="font-weight: 200"><pre>@real ^fox.quick(h){ *is_brown && it_jumps_over(doges.lazy) } $0123456789#</pre></div>
-      <div style="font-weight: 300"><pre>@real ^fox.quick(h){ *is_brown && it_jumps_over(doges.lazy) } $0123456789#</pre></div>
-      <div style="font-weight: 400"><pre>@real ^fox.quick(h){ *is_brown && it_jumps_over(doges.lazy) } $0123456789#</pre></div>
-      <div style="font-weight: 500"><pre>@real ^fox.quick(h){ *is_brown && it_jumps_over(doges.lazy) } $0123456789#</pre></div>
-      <div style="font-weight: 600"><pre>@real ^fox.quick(h){ *is_brown && it_jumps_over(doges.lazy) } $0123456789#</pre></div>
-      <div style="font-weight: 700"><pre>@real ^fox.quick(h){ *is_brown && it_jumps_over(doges.lazy) } $0123456789#</pre></div>
-      <div style="font-weight: 800"><pre>@real ^fox.quick(h){ *is_brown && it_jumps_over(doges.lazy) } $0123456789#</pre></div>
-      <div style="font-weight: 900"><pre>@real ^fox.quick(h){ *is_brown && it_jumps_over(doges.lazy) } $0123456789#</pre></div>
-  </div>
--->
 
-  <template is="dom-repeat" items="{{fontweights}}">
-      <div style="font-weight: [[item.weight]]"><pre>@real ^fox.quick(h){ *is_brown && it_jumps_over(doges.lazy) } $0123456789#</pre></div>
-  </template>
+    <h2>
+      <slot></slot>
+    </h2>
+    
+    <template is="dom-repeat" items="{{fontweights}}">
+      <div class="a-row" style="font-weight: [[item.weight]]">
+        <div>[[item.name]]</div>
+        <pre>@real ^fox.quick(h){ *is_brown && it_jumps_over(doges.lazy) } $0123456789#</pre>
+      </div>
+    </template>
 
   </template>
 

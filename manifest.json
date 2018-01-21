@@ -1,0 +1,6 @@
+{
+  "name": "fonts-showcase",
+  "short_name": "fonts-showcase",
+  "start_url": "/",
+  "display": "standalone"
+}

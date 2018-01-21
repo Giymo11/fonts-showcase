@@ -1,0 +1,32 @@
+<link rel="import" href="/bower_components/polymer/polymer-element.html">
+
+<dom-module id="fonts-showcase-app">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]!</h2>
+  </template>
+
+  <script>
+    /**
+     * @customElement
+     * @polymer
+     */
+    class FontsShowcaseApp extends Polymer.Element {
+      static get is() { return 'fonts-showcase-app'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'fonts-showcase-app'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(FontsShowcaseApp.is, FontsShowcaseApp);
+  </script>
+</dom-module>

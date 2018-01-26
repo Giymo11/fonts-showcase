@@ -4,6 +4,11 @@
 TODO: insert links to the fonts!
 
 
+planned:
+- fonts-showcase-one -- showcases the weights of the fonts (light and dark theme, minimal and syntax highlighting)
+- fonts-showcase-two -- showcases the ligatures 
+- fonts-showcase-three -- showcases code blocks (minimal and normal syntax highlighting, light and dark theme)
+
 
 ## Install the Polymer-CLI
 

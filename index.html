@@ -41,11 +41,15 @@
       
       body {
         background: var(--darcula-bg);
+        display: grid;
+        grid-template-columns: 1fr 1fr [content-start] 1024px [content-end] 1fr 1fr;
       }
       
       fonts-showcase-one {
-        margin: 32px 0;
+        margin-top: 3.75rem;
+        margin-bottom: 0.75rem;
         font-size: 16px;
+        grid-column: content-start / content-end;
       }
 
       .iosevka {
@@ -67,17 +71,34 @@
         --fonts-showcase-family: 'DejaVu Sans Code';
       }
     </style>
-    
-    <style>
-      
-    </style>
   </head>
   <body>
-    <fonts-showcase-one class="iosevka">Iosevka Custom</fonts-showcase-one>
-    <fonts-showcase-one class="fira-code">Fira Code</fonts-showcase-one>
-    <fonts-showcase-one class="monoid">Monoid with alternative 'l'</fonts-showcase-one>
-    <fonts-showcase-one class="hasklig">Hasklig</fonts-showcase-one>
-    <fonts-showcase-one class="fixedsys-excelsior">Fixedsys Excelsior</fonts-showcase-one>
-    <fonts-showcase-one class="dejavu-sans-code">DejaVu Sans Code</fonts-showcase-one>
+    
+        <fonts-showcase-one class="iosevka">
+          <span >Iosevka Custom</span>
+          <span slot="description">Iosevka is a slender monospace sans-serif typeface inspired by Pragmata Pro, M+ and PF DIN Mono.</span>
+        </fonts-showcase-one>
+        <fonts-showcase-one class="fira-code">
+          <span>Fira Code</span>
+          <span slot="description">Fira Code is an extension of the Fira Mono font containing a set of ligatures for programming character combinations.</span>
+        </fonts-showcase-one>
+        <fonts-showcase-one class="monoid">
+          Monoid with serifed 'l'
+          <span slot="description">Monoid is a semi-condensed, big aperture font designed for programming. This version is customized with a serifed 'l'.</span>
+        </fonts-showcase-one>
+        <fonts-showcase-one class="hasklig">
+          Hasklig
+          <span slot="description">Hasklig is a fork of the Source Code Pro repository, adding ligatures to make especially Haskell code more readable.</span>
+        </fonts-showcase-one>
+        <fonts-showcase-one class="fixedsys-excelsior">
+          Fixedsys Excelsior
+          <span slot="description">Fixedsys Excelsior is a 8x16 font with programming ligatures, inspired by DOS and intended for the terminal.</span>
+        </fonts-showcase-one>
+        <fonts-showcase-one class="dejavu-sans-code">
+          DejaVu Sans Code
+          <span slot="description">DejaVu Sans Code a is monospaced font with programming ligatures based on DejaVu Sans Mono.</span>
+        </fonts-showcase-one>
+    
+    
   </body>
 </html>

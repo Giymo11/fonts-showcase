@@ -9,9 +9,15 @@
 
     <style include="fonts-showcase-one-styles"></style>
 
-    <h2>
-      <slot></slot>
-    </h2>
+
+    <div class="header">
+      <h2>
+        <slot></slot>
+      </h2>
+      <p>
+        <slot name="description"></slot>
+      </p>
+    </div>
     
     <template is="dom-repeat" items="{{fontweights}}">
       <div class="a-row" style="font-weight: [[item.weight]]">
